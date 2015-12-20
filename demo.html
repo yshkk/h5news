@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class=" js-no-overflow-scrolling">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>test1</title>
+    <link rel="stylesheet" type="text/css" href="H5FullscreenPage.css">
+    <link rel="stylesheet" type="text/css" href="page-animation.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body class="H5FullscreenPage">
+    <div class="H5FullscreenPage-wrap">
+        <div class="item item1">
+            <div class="part part1  heartBeat" data-delay="1000">
+                <img src="imgs/page1_title.png" class="page1_title"></img>
+            </div>
+            <img src='imgs/page1_bg.png' class="page1_bg"></img>	
+            
+            <div class="part part2 slideDown">
+            <img src="imgs/page1_content.png" class="page1_content">
+            </div>
+            
+            <div class="part part3 fadeIn" data-delay="2500">
+				<img src='imgs/page1_icon.png'class="page1_icon1"></img>
+            </div>
+            <div class="part part4 fadeIn"data-delay="2000">
+				<img src='imgs/page1_icon.png'class="page1_icon2"></img>
+            </div>
+            <div class="part part5 slideDown">
+				<img src='imgs/page1_content_post.png'class="page1_content_post"></img>
+            </div>
+            
+        </div>
+        <div class="item item2">
+            <div class="part part1 zoomIn" >
+                <img src="imgs/page2_title.png" alt=""> 
+            </div>
+            <div class="part part2 slideLeft" data-delay="1000">
+                <img src="imgs/page2_content (1).png" alt="">
+            </div>
+            <div class="part part3 slideLeft" data-delay="1500">
+                <img src="imgs/page2_content (2).png" alt="">
+            </div>
+            <div class="part part4 slideLeft" data-delay="2000">
+                <img src="imgs/page2_content (3).png" alt="">
+            </div>
+            <div class="part part5 slideLeft" data-delay="2500">
+                <img src="imgs/page2_content (4).png" alt="">
+            </div>
+            <div class="part part6 slideLeft" data-delay="3000">
+                <img src="imgs/page2_content (5).png" alt="">
+            </div>
+            <div class="part part7 slideLeft" data-delay="3500">
+                <img src="imgs/page2_content (6).png" alt="">
+            </div>
+            <div class="part part3 zoomIn"></div>
+        </div>
+        <div class="item item3">
+            <div class="part part1 rollInLeft" data-delay="1000">
+                <img src="imgs/page3_content (2).png" alt="">
+            </div>
+            <div class="part part2 rollInLeft" data-delay="1500">
+                <img src="imgs/page3_content (3).png" alt="">
+            </div>
+            <div class="part part3 rollInLeft" data-delay="2000">
+                <img src="imgs/page3_content (1).png" alt="">
+            </div>
+            <div class="part part4 slideDown">
+                 <img src="imgs/page3_title.png" alt="">
+            </div>
+            <div class="part part5 slideDown">
+                 <img src="imgs/page3_info.png" alt="">
+            </div>
+            <img src="imgs/page3_mask (1).png" alt="" class='mask mask1'>
+            <img src="imgs/page3_mask (2).png" alt="" class='mask mask2'>
+        </div>
+        <div class="item item4">
+            
+            <div class="part part1 zoomIn">
+                 <img src="imgs/page4_title.png" alt="">
+            </div>
+            <div class="part part2 slideLeft" data-delay="1000">
+                 <img src="imgs/page4_content (2).png" alt="">
+            </div>
+            <div class="part part3 slideLeft" data-delay="2000">
+                 <img src="imgs/page4_content (3).png" alt="">
+            </div>
+            <div class="part part4 slideLeft" data-delay="3000">
+                 <img src="imgs/page4_content (1).png" alt="">
+            </div>
+        </div>
+        <div class="item item5">
+            <div class="part part1 slideUp">
+                <img src="imgs/page5_title.png" alt="">
+            </div>
+            <div class="part part2 rollInLeft">
+                <img src="imgs/page5_content.png" alt="" class="page5_content">
+            </div>
+
+            <div class="part part3 slideDown">
+                <img src="imgs/page5_foot.png" alt="">
+            </div>
+            <div class="part part5 fadeIn">
+                <img src="imgs/page5_c (1).png" alt="" class='p5_open'>
+            </div>
+        </div>
+        <div class="item item6">
+            <div class="wrapper"> 
+                <div class="part part1 slideUp">
+                    <img src="imgs/page5_title.png" alt="">
+                </div>
+                <div class="part part2 slideDown" data-delay="1000">
+                    <img src="imgs/page5_foot.png" alt=""class='p6_foot'>
+                </div>
+                <div class="part part3 zoomIn" data-delay="1000">
+                    <img src="imgs/page6_content.png" alt=""class='page6_content'>
+                </div>
+                <div class="part part4 heartBeat" data-delay="2000">
+                    <img src="imgs/fire.png" alt="">
+                </div>
+                <div class="part part5 zoomIn">
+                    <img src="imgs/page6_content3.png" alt="">
+                </div>
+            </div>
+             
+        </div>
+        <div class="item item7">
+            <div class="wrapper1">
+                <img src="imgs/p7.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <script src="zepto.min.js"></script>
+    <script type="text/javascript" src="H5FullscreenPage.js"></script>
+    <script type="text/javascript">
+        H5FullscreenPage.init({'type':2,'pageShow' : function(dom){
+        
+    },'pageHide' : function(dom){
+        //console.log(dom);
+        
+    }});
+    
+    $('.item1').tap(
+        
+        function(e){
+            
+            
+            
+                $('.page1_content')[0].src='imgs/page1_content_change.png';
+                $('.item1 .part3').show();
+                setTimeout(function(){$('.item1 .part5').show()},1200);
+               
+                
+       
+            }
+    );
+    $('.item3 .part1').tap(
+        function(e){
+            $('.mask2').show();
+        }
+    )
+    $('.item3 .part2').tap(
+        function(e){
+            $('.mask1').show();
+        }
+    )
+    $('.item3 .part3').tap(
+        function(e){
+            $('.mask2').show();
+        }
+    )
+    $('.mask').tap(
+        function(e){$(this).hide();}
+    )
+    $('.page5_content').tap(
+        
+        function(e){     
+                $(this)[0].src='imgs/page5_c (2).png';
+                $(this).addClass('slideLeft page5_changed');
+                return (function(){
+                     $('.page5_changed').tap(
+        function(e){
+                $(this)[0].src='imgs/page5_c (1).png';
+                $(this).addClass('zoomIn');
+                
+        }
+    )
+                })();
+           }
+    )
+    $('.page6_content').tap(
+        function(e){
+             $(this)[0].src='imgs/page6_content2.png';
+             $(this).addClass('zoomIn');
+             $('.item6 .part2').animate({bottom:'0%'});
+              $('.item6 .part4').show();
+              return (function(){
+                  $('.page6_content').tap(
+                      function(e){
+                          $('.item6 .part5').show().addClass('slideUp');
+                        //   console.log(1);
+                          
+                      }
+                  )
+              })();
+        }
+    )
+    </script>
+</body>
+
+</html>
